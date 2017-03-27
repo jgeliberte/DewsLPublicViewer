@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.swat_john.myfirstapp.UserActivity">
+
+    <Button
+        android:id="@+id/f1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Candidate Alerts"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/f1"
+        android:text="Public Releases" />
+
+    <fragment
+        android:id="@+id/fplace"
+        android:layout_width="match_parent"
+        android:layout_height="498dp"
+        android:name="layout.FragmentOne"
+        tools:layout="@layout/fragment_fragment_one" />
+
+</LinearLayout>
