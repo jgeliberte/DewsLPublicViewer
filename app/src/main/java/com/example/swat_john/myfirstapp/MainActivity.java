@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 params.put("username", username);
                 params.put("password", password);
 
-                client.post("http://localhost/lin/mobile_login/", params, new AsyncHttpResponseHandler() {
+                client.post("http://www.dewslandslide.com/lin/mobile_login/", params, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                         String response = new String(responseBody);
