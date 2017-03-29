@@ -31,6 +31,7 @@ public class UserActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         Button button = (Button) view;
         Fragment fragment;
+
         switch (button.getId()) {
             case R.id.f1:
                 fragment = new FragmentOne();

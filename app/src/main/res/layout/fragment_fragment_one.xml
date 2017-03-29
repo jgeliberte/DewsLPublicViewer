@@ -1,44 +1,45 @@
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#ffffff"
     tools:context="layout.FragmentOne">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/jsonres"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Invalid alerts count" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txt_invalid_alerts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="INVALID ALERTS" />
+        <TextView
+            android:id="@+id/txt_invalid_alerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff9090"
+            android:textAlignment="center"
+            android:text="INVALID ALERTS" />
 
-    <ListView
-        android:id="@+id/invalid_alerts"
-        android:layout_toEndOf="@+id/txt_invalid_alerts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <ListView
+            android:id="@+id/invalid_alerts"
+            android:layout_toEndOf="@+id/txt_invalid_alerts"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffff9a"/>
 
-    <TextView
-        android:id="@+id/txt_valid_alerts"
-        android:layout_toEndOf="@+id/invalid_alerts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="VALID ALERTS" />
+        <TextView
+            android:id="@+id/txt_valid_alerts"
+            android:layout_toEndOf="@+id/invalid_alerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8aff9e"
+            android:textAlignment="center"
+            android:text="VALID ALERTS" />
 
-    <ListView
-        android:id="@+id/valid_alerts"
-        android:layout_toEndOf="@+id/txt_valid_alerts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
-</LinearLayout>
+        <ListView
+            android:id="@+id/valid_alerts"
+            android:layout_toEndOf="@+id/txt_valid_alerts"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#99b4ff"/>
+    </LinearLayout>
+</FrameLayout>

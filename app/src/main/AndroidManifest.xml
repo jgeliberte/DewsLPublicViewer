@@ -29,7 +29,6 @@
         
         <service android:name=".service.PublicAlertService"
             android:exported="false"/>
-
     </application>
 
 </manifest>

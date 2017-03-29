@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/fplace"
         android:layout_width="match_parent"
-        android:layout_height="498dp"
+        android:layout_height="wrap_content"
         android:name="layout.FragmentOne"
         tools:layout="@layout/fragment_fragment_one" />
 
